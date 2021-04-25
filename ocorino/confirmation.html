@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+    <title>Orinoco confirmation</title>
+</head>
+<body>
+    <!-- Partie header avec logo et panier -->
+
+    <header class="banner">
+        <div class="content_banner">
+            <a href="index.html"><img class="logo_banniere" src="images/logo_ocorine.jpg" alt="logo ocorino"></a>
+        </div>
+        <img class="image_bois" src="images/bois2.jpg">
+    </header>
+
+    <!-- contenant principal -->
+
+    <article id="order">
+        <div class="content_order">
+            <p class="text_confirm">Merci pour votre achat <br>
+                <span id="lastName"></span> <br>
+                <span id="firstName"></span >
+                
+            </p>
+            <p class="text_confirm">Voici votre n° de commande : <br>
+            <span class="orderId" id="orderId"></span></p>
+        </div>
+    </article>
+
+    <!-- Dernière partie footer avec mention légale -->
+    
+    <footer class="main_footer">
+        <a class="back_confirmation" href ="index.html">Retour à l'accueil</a>   
+    </footer>
+
+    <script type="module" src="js/confirmation.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('alexbrush-regular-webfont.eot');
+    src: url('alexbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alexbrush-regular-webfont.woff2') format('woff2'),
+         url('alexbrush-regular-webfont.woff') format('woff'),
+         url('alexbrush-regular-webfont.ttf') format('truetype'),
+         url('alexbrush-regular-webfont.svg#alex_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caroniregular';
+    src: url('caroni-regular-webfont.eot');
+    src: url('caroni-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('caroni-regular-webfont.woff2') format('woff2'),
+         url('caroni-regular-webfont.woff') format('woff'),
+         url('caroni-regular-webfont.ttf') format('truetype'),
+         url('caroni-regular-webfont.svg#caroniregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+                        /* Debut du CSS de l'index */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 239, 231);
+}
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     CSS BANNER INDEX    ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+.banner
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+.content_banner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.logo_banniere
+{
+    height: 150px;
+    margin: 0 0 0 15px;
+}
+.panier_banniere
+{
+    margin: 0 150px 10px 0;
+}
+.image_bois
+{
+    height: 100px;
+    object-fit: cover;
+}
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     CSS MAIN INDEX     ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+.text_introduction
+{
+    font-family: 'caroniregular';
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(82, 70, 55);
+}
+#main_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.name_product
+{
+    font-family: 'caroniregular';
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(82, 70, 55);
+}
+.image_product
+{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+a
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'caroniregular';
+    color: rgb(82, 70, 55);
+}
+.button_article
+{
+    width: 160px;
+    height: 35px;
+    text-align: center;
+    border: 1px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     CSS FOOTER     ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+.main_footer
+{
+    background-color: #d3b8a1;
+    width: 100%;
+    height: 190px;
+    border-top:2px rgb(82, 70, 55) solid;
+    border-bottom: 2px rgb(82, 70, 55) solid;;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     DEBUT DU CSS ARTICLE     ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+#detailsProduct
+{
+    display: flex;
+    justify-content: center;
+}
+.main_details
+{
+    display: flex;
+
+}
+.image_article
+{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    margin: 20px 50px 20px 20px;
+}
+.second_content
+{
+    background-color: #d3b8a1;
+    height: 350px;
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    margin: 20px 0 0 0 ;
+}
+
+.name_article
+{
+    font-family: 'caroniregular';
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(82, 70, 55);
+    margin: 15px 0 15px 0px;
+}
+.description_product
+{
+    width: 400px;
+    text-align: center;
+    margin : 10px 50px 30px 50px;
+    font-size: 1.7em;
+    font-family: 'caroniregular';
+}
+label
+{
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'caroniregular';
+    font-size: 1.5em;
+}
+select
+{
+    margin-top: 5px;
+    width: 120px;
+}
+.price_article
+{
+    text-align: right;
+    margin-right: 40px;
+    font-size: 2em;
+    font-family: 'caroniregular';
+}
+.price 
+{
+    margin: 30px 0 30px 0 ;
+    text-align: center;
+}
+.content_panier
+{
+    width: 180px;
+    height: 35px;
+    background-color: rgb(245, 239, 231);
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     CSS DU PANIER   ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+.titre_panier
+{
+    font-family: 'caroniregular';
+    font-size: 2.5em;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.content_titre
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.titre_article , .titre_prix, .nom_produit, .prix_article_unitaire, .titre_total1, .total2, .price
+{
+    font-family: 'caroniregular';
+    font-size: 2.5em;
+}
+#panierVide
+{
+    font-family: 'caroniregular';
+    font-size: 4em; 
+    text-align: center;
+}
+.titre_prix
+{
+    width: 100px;
+    text-align: center;
+}
+.image_panier
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+}
+.nom_produit
+{
+    width: 150px;
+    text-align: center;
+}
+.content_articles
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.prix_article_unitaire
+{
+    width: 350px;
+    text-align: right;
+}
+.panier 
+{
+    font-family: 'caroniregular';
+    font-size: 1.3em;
+}
+.titre_total1
+{
+    text-align: center;
+}
+.total2
+{
+    text-align: right;
+    margin-right: 20%;
+}
+.annulerProduit
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-family: 'caroniregular';
+    font-size: 2.3em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    color: white;
+    background-color: rgb(247, 95, 95);
+    border: 0.1px rgb(82, 70, 55) solid;
+    border-radius: 50px;
+}
+.total
+{
+    background-color: rgb(194, 168, 136);
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+}
+.content_formulaire
+{
+    border-radius: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+legend
+{
+    font-family: 'caroniregular';
+    font-size: 2em;
+    text-align: center;
+}
+.bouton_form
+{
+    width: 180px;
+    height: 35px;
+    background-color: #d3b8a1;
+    border: 2px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    margin: 15px 0 15px 0;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤     CSS PAGE CONFIRMATION  ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+
+#order
+{
+    width:auto;
+    height: 250px;
+    border: 10px rgb(82, 70, 55) solid;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.text_confirm
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+.orderId
+{
+    font-size: 1.5em;
+}
+span
+{
+    font-family: 'caroniregular';
+    font-size: 2.5em;
+}
+.back_confirmation
+{
+    font-family: 'caroniregular';
+    font-size: 2.8em;
+}

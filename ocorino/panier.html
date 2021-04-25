@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+    <title>Panier Orinoco</title>
+</head>
+<body>
+    <!-- Partie header avec logo et panier -->
+	<header class="banner">
+        <div class="content_banner">
+            <a href="index.html"><img class="logo_banniere" src="images/logo_ocorine.jpg" alt="logo ocorino"></a>
+            <a href ="panier.html"><img class="panier_banniere" src="images/panier.jpg" alt="logo panier ocorino"></a>   
+        </div>
+        <img class="image_bois" src="images/bois2.jpg">
+    </header>
+
+    <!-- Partie introduction du site -->
+
+    <h2 class="titre_panier">Récapitulatif de votre commande</h1>
+        
+	<main class="basket">
+		<div id="articlePanier">
+			<p id="panierVide">Votre panier est vide</p>
+		</div>
+		<div class="form">
+			<form method="post" name="formulaire-panier">
+				<fieldset class="content_formulaire">
+					<legend>Vos coordonnées</legend>
+					<div class="form__group">
+						<div class="form__group">
+							<label for="nomForm">Nom : </label>
+							<input type="text" id="nomForm" class="form-control input-control" required name="nomForm">
+						</div>
+						<div class="form__group">
+							<label for="prenomForm" class="right-inline">Prénom :</label>
+							<input type="text" id="prenomForm" class="form-control input-control" required name="prenomForm">
+						</div>
+					</div>
+					<div class="form__group">
+						<label for="mailForm">E-mail :</label>
+						<input type="email" id="mailForm" class="form-control input-control" required name="mailForm">
+					</div>
+					<div class="form__group">
+						<label for="adresseForm">Adresse :</label>
+						<input type="text" id="adresseForm" class="form-control input-control" required name="adresseForm">
+					</div>
+					<div class="form__group">
+						<label for="villeForm">Ville :</label>
+						<input type="text" id="villeForm" class="form-control input-control" required name="villeForm">
+					</div>
+					<div class="form__group">
+						<label for="codeForm">Code postal : </label>
+						<input type="text" id="codeForm" class="form-control input-control" required name="codeForm">
+					</div>
+					<div class="bouton_panier">
+						<input type="button" value="Valider mes informations" class="bouton_form" id="buttonFormulaire">
+					</div>
+				</fieldset> 	
+			</form>
+		</div>
+	</main>
+
+    <!-- Dernière partie footer avec mention légale -->
+	
+    <footer class="main_footer"></footer>
+
+    <script type="module" src="js/panier.js"></script>
+</body>
+</html>
